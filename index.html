@@ -169,7 +169,7 @@
                             <span><i class="fa-regular fa-clock mr-2"></i>關鍵行動鬧鐘 (Set Alarm)</span>
                         </div>
                         <div class="p-4 space-y-3 text-xs">
-                            <div class="flex gap-2"><span class="font-bold w-12">即刻</span> <span>✈️ 買機票 CX526/505</span></div>
+                            <div class="flex gap-2"><span class="font-bold w-12">即刻</span> <span>✈️ 買機票 CX524/505</span></div>
                             <div class="flex gap-2"><span class="font-bold w-12">4/25</span> <span>🏨 搶訂 季之庭 & HOTEL CLAD</span></div>
                             <div class="flex gap-2"><span class="font-bold w-12">7/01</span> <span>🚗 預約租車 (成田取/淺草還)</span></div>
                             <div class="flex gap-2"><span class="font-bold w-12">9/01</span> <span>🍣 搶訂 Mantensushi (Day 7)</span></div>
@@ -199,9 +199,10 @@
                             <span><i class="fa-solid fa-car mr-2"></i>租車 (Compact SUV)</span>
                         </div>
                         <div class="p-5 text-sm space-y-2">
-                            <p><strong>取車:</strong> 10/31 14:30 @ 成田機場</p>
-                            <p><strong>還車:</strong> 11/05 18:30 @ 東京淺草/上野</p>
+                            <p><strong>取車:</strong> 10/31 08:00 @ 成田機場</p>
+                            <p><strong>還車:</strong> 11/05 18:00 @ 東京淺草/上野</p>
                             <p><strong>保險:</strong> NOC 安心保險</p>
+                            <p class="text-red-500 font-bold"><i class="fa-solid fa-snowflake mr-1"></i>必須指定雪胎 (Snow Tires)</p>
                         </div>
                     </div>
 
@@ -383,43 +384,48 @@
                     itineraryData: [
                         // Day 1: 10/31 (Sat)
                         [
-                            { id: 101, time: '13:10', title: '抵達成田機場 (CX526)', category: 'flight', desc: '入境 -> 租車櫃台 -> 取車', transportType: 'flight', location: 'Narita Airport' },
-                            { id: 102, time: '14:30', title: '拎車 & 出發', category: 'transport', desc: '檢查車身，Set 導航去沼津', transportType: 'car', travelTime: '3 hr' },
-                            { id: 103, time: '17:30', title: 'Check-in 沼津', category: 'hotel', desc: 'Daiwa Roynet Hotel Numazu\nMC: 50 073 112*71', transportType: 'car', location: 'Daiwa Roynet Hotel Numazu' },
-                            { id: 104, time: '19:00', title: 'Dinner: Sawayaka 漢堡扒', category: 'food', desc: '沼津學園通店\nMC: 50 104 702*76\n必食: 拳頭漢堡', transportType: 'car', location: 'Sawayaka Numazu' }
+                            { id: 101, time: '06:40', title: '抵達成田機場 (CX524)', category: 'flight', desc: '入境 -> 租車櫃台 -> 取車', transportType: 'flight', location: 'Narita Airport' },
+                            { id: 102, time: '08:00', title: '拎車 & 出發', category: 'transport', desc: '檢查車身，Set 導航去沼津', transportType: 'car', travelTime: '3 hr' },
+                            { id: 1025, time: '11:30', title: 'Lunch: 沼津港 (丸天)', category: 'food', desc: 'MC: 650 583 339*01\n魚市場立體停車場', transportType: 'car', location: 'Numazu Fish Market' },
+                            { id: 1026, time: '13:30', title: '三島大吊橋', category: 'sightseeing', desc: 'MC: 50 238 668*85\n日本最長吊橋', transportType: 'car', location: 'Mishima Skywalk' },
+                            { id: 1027, time: '16:00', title: '⚠️ Sawayaka 攞飛 (必做)', category: 'food', desc: '沼津學園通店\nMC: 50 104 702*76\n先攞飛，後 Check-in', transportType: 'car', location: 'Sawayaka Numazu' },
+                            { id: 103, time: '17:00', title: 'Check-in 沼津', category: 'hotel', desc: 'Daiwa Roynet Hotel Numazu\nMC: 50 073 112*71\n泊 Plaza Verde', transportType: 'car', location: 'Daiwa Roynet Hotel Numazu' },
+                            { id: 104, time: '19:00', title: 'Dinner: Sawayaka 漢堡扒', category: 'food', desc: '必食: 拳頭漢堡', transportType: 'walk', location: 'Sawayaka Numazu' }
                         ],
                         // Day 2: 11/1 (Sun)
                         [
                             { id: 201, time: '10:30', title: '大室山 (伊豆)', category: 'sightseeing', desc: 'MC: 48 846 512*63\n搭吊車上山行火山口', transportType: 'car', location: 'Omuro Mountain' },
                             { id: 202, time: '12:30', title: 'Lunch: 蕎麥麵', category: 'food', desc: '伊豆高原附近', transportType: 'car', location: 'Izu Kogen' },
                             { id: 203, time: '14:30', title: '修善寺溫泉', category: 'sightseeing', desc: 'MC: 16 186 084*42\n竹林小徑，紅葉', transportType: 'car', location: 'Shuzenji Onsen' },
-                            { id: 204, time: '19:00', title: 'Dinner: 沼津魚市場', category: 'food', desc: 'MC: 650 583 339*01\n丸天 / 魚河岸', transportType: 'car', location: 'Numazu Fish Market' }
+                            { id: 204, time: '19:00', title: 'Dinner: 鰻魚飯 櫻家', category: 'food', desc: 'Tel: 055-975-4520\n三島市內', transportType: 'car', location: 'Unagi Sakuraya' }
                         ],
                         // Day 3: 11/2 (Mon)
                         [
                             { id: 301, time: '11:00', title: '諏訪湖 (立石公園)', category: 'sightseeing', desc: 'MC: 75 236 391*70\n你的名字聖地', transportType: 'car', location: 'Tateishi Park' },
                             { id: 302, time: '13:00', title: 'Lunch: 山賊燒', category: 'food', desc: '松本市內', transportType: 'car', location: 'Matsumoto' },
-                            { id: 303, time: '14:30', title: '松本城 & 繩手通', category: 'sightseeing', desc: 'MC: 75 851 375*66\n國寶城，青蛙街', transportType: 'walk', location: 'Matsumoto Castle' },
+                            { id: 303, time: '14:30', title: '松本城', category: 'sightseeing', desc: 'MC: 75 851 375*66\n國寶城', transportType: 'walk', location: 'Matsumoto Castle' },
                             { id: 304, time: '18:30', title: 'Dinner: 馬肉刺身', category: 'food', desc: '市內居酒屋', transportType: 'walk', location: 'Matsumoto Station' },
-                            { id: 305, time: '21:00', title: 'Check-in 松本', category: 'hotel', desc: 'Onyado Nono Matsumoto', transportType: 'car', location: 'Onyado Nono Matsumoto' }
+                            { id: 305, time: '21:00', title: 'Check-in 松本', category: 'hotel', desc: 'Onyado Nono Matsumoto\nMC: 75 791 881*76', transportType: 'car', location: 'Onyado Nono Matsumoto' }
                         ],
                         // Day 4: 11/3 (Tue)
                         [
-                            { id: 401, time: '10:30', title: '地獄谷野猿公苑', category: 'sightseeing', desc: 'MC: 341 818 200*82\n睇馬騮浸溫泉 (需行30分鐘)', transportType: 'car', location: 'Jigokudani Monkey Park' },
-                            { id: 402, time: '15:00', title: '草津溫泉 (湯畑)', category: 'sightseeing', desc: 'MC: 341 446 176*44\n日本三大名泉', transportType: 'car', location: 'Kusatsu Onsen Yubatake' },
+                            { id: 400, time: '09:30', title: '善光寺', category: 'sightseeing', desc: 'Tel: 026-234-3591\n善光寺第1停車場', transportType: 'car', location: 'Zenkoji' },
+                            { id: 401, time: '12:00', title: 'Lunch: Enza Cafe', category: 'food', desc: 'MC: 341 818 200*82\n地獄谷入口', transportType: 'car', location: 'Enza Cafe' },
+                            { id: 4015, time: '13:00', title: '地獄谷野猿公苑', category: 'sightseeing', desc: '睇馬騮浸溫泉 (需行30分鐘)', transportType: 'walk', location: 'Jigokudani Monkey Park' },
                             { id: 403, time: '16:30', title: 'Check-in 季之庭', category: 'highlight', desc: 'MC: 341 448 004*52\n💍 慶祝結婚一周年\n私人風呂 + 懷石料理', transportType: 'car', location: 'Tokinoniwa' }
                         ],
                         // Day 5: 11/4 (Wed)
                         [
-                            { id: 501, time: '12:30', title: '河口湖 (大石公園)', category: 'sightseeing', desc: 'MC: 161 303 446*52\n睇富士山', transportType: 'car', location: 'Oishi Park' },
+                            { id: 501, time: '13:00', title: '河口湖 (大石公園)', category: 'sightseeing', desc: 'MC: 161 303 446*52\n睇富士山', transportType: 'car', location: 'Oishi Park' },
                             { id: 502, time: '14:30', title: '紅葉迴廊', category: 'sightseeing', desc: 'MC: 161 361 561*66\n必去紅葉隧道', transportType: 'car', location: 'Momiji Corridor' },
-                            { id: 503, time: '16:30', title: 'Check-in HOTEL CLAD', category: 'hotel', desc: 'MC: 50 806 191*75\n富士山景 View', transportType: 'car', location: 'HOTEL CLAD' }
+                            { id: 503, time: '16:30', title: 'Check-in HOTEL CLAD', category: 'hotel', desc: 'MC: 50 806 191*75\n浸「木之花之湯」睇日落', transportType: 'car', location: 'HOTEL CLAD' }
                         ],
                         // Day 6: 11/5 (Thu)
                         [
-                            { id: 601, time: '10:00', title: '御殿場 Outlets', category: 'shopping', desc: 'Shopping Time!', transportType: 'walk', location: 'Gotemba Premium Outlets' },
+                            { id: 600, time: '06:30', title: '晨早突擊: 山中湖逆富士', category: 'sightseeing', desc: 'MC: 434 324 577*85\n長池親水公園', transportType: 'car', location: 'Nagaike Water Park' },
+                            { id: 601, time: '10:00', title: '御殿場 Outlets', category: 'shopping', desc: 'Shopping Time!', transportType: 'car', location: 'Gotemba Premium Outlets' },
                             { id: 602, time: '14:00', title: '箱根神社', category: 'sightseeing', desc: 'MC: 57 123 048*31\n平和之鳥居', transportType: 'car', location: 'Hakone Shrine' },
-                            { id: 603, time: '18:30', title: '還車 & Check-in', category: 'transport', desc: '東京淺草/上野還車\n入住淺草東武酒店', transportType: 'car', location: 'Asakusa Tobu Hotel' },
+                            { id: 603, time: '18:00', title: '還車 & Check-in', category: 'transport', desc: '東京淺草/上野還車\n(記得入滿油)', transportType: 'car', location: 'Asakusa Tobu Hotel' },
                             { id: 604, time: '19:30', title: 'Dinner: 鳥貴族', category: 'food', desc: '淺草店\nMega Beer 慶祝!', transportType: 'walk', location: 'Torikizoku Asakusa' }
                         ],
                         // Day 7: 11/6 (Fri) 正日
@@ -430,14 +436,15 @@
                         ],
                         // Day 8: 11/7 (Sat)
                         [
-                            { id: 801, time: '10:00', title: '吉祥寺', category: 'sightseeing', desc: 'Satou 炸牛肉球\n井之頭公園', transportType: 'train', location: 'Kichijoji' },
+                            { id: 801, time: '10:30', title: '吉祥寺', category: 'sightseeing', desc: 'Satou 炸牛肉球\n井之頭公園', transportType: 'train', location: 'Kichijoji' },
                             { id: 802, time: '14:00', title: '下北澤', category: 'shopping', desc: '古著店尋寶\nCafe', transportType: 'train', location: 'Shimokitazawa' },
                             { id: 803, time: '19:00', title: 'Dinner: 隨心食', category: 'food', desc: '新宿 / 淺草', transportType: 'train' }
                         ],
                         // Day 9: 11/8 (Sun)
                         [
-                            { id: 901, time: '10:00', title: '最後衝刺', category: 'shopping', desc: '執行李', transportType: 'walk' },
-                            { id: 902, time: '14:20', title: '回程 (CX526)', category: 'flight', desc: '成田 -> 香港', transportType: 'train', location: 'Narita Airport' }
+                            { id: 901, time: '10:00', title: '最後衝刺', category: 'shopping', desc: '淺草/上野', transportType: 'walk' },
+                            { id: 902, time: '14:00', title: '出發往機場 (Skyliner)', category: 'transport', desc: '京成上野站 -> 成田 T2\n(約 41 分鐘)', transportType: 'train', location: 'Keisei Ueno Station' },
+                            { id: 903, time: '18:00', title: '回程 (CX505)', category: 'flight', desc: '成田 -> 香港', transportType: 'flight', location: 'Narita Airport' }
                         ]
                     ],
 
